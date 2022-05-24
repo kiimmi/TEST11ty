@@ -1,0 +1,56 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --dark-green: #1B2920;
+    --sage-green: #74977A;
+    --white: #FFFFFF;
+    --emerald-green: #4D8965;
+    --dark-sage: #578172;
+    --blueish-green: #B5D3C5;
+    --dirt-green:#455548;
+    --darker: #617E66;
+    --y: #708586;
+    --z: #395242;
+
+  
+    /*Typography */
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
+  }
+
+  .light {
+    --primary: var(--dark-green);
+  --secondary: var(--sage-green);
+  --third: var(--white);
+  --fourth: var(--emerald-green);
+  --fifth: var(--dark-sage);
+  --six: var(--blueish-green);
+  --seven: var(--dirt-green);
+  --eight: var(--darker);
+  }
+
+  .dark {
+    --primary: var(--y);
+    --secondary: var(--z);
+    --third: var(--dark-green);
+    --fourth: var(--dark-green);
+    --fifth: var(--dark-green);
+    --six: var(--dark-green);
+    --seven: var(--dark-sage);
+    --eight: var(--dark-green);
+  }
