@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="light">
+ 
+<section class="recommend">
+
+      <nav class="desk">
+    <h1>The Show Off</h1>
+    <h3 class="line">_______________</h3>
+    <ul role="list" class="desk-nav">
+        <li>
+            <a href="/" class="nav-item-desk">Home</a>
+        </li>
+        <li>
+            <a href="/blog/" class="nav-item-desk">Recommended</a>
+        </li>
+        <li>
+            <a href="https://flourishing-conkies-4ccdb4.netlify.app/admin/#/" class="nav-item-desk">Login</a>
+        </li>
+
+    </ul>
+</nav>
+ 
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button class="se"> <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+      </form>
+      <script>
+        const f = document.getElementById('form');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = 'pagedart.com';
+  
+        function submitted(event) {
+          event.preventDefault();
+          const url = google + site + '+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+        }
+  
+        f.addEventListener('submit', submitted);
+      </script>
+
+<button class="theme" >change theme</button>
+
+        <ul class="articles"><article class="article">
+                 <h3 >avatar</h3>
+                 <div class="stars"></div>
+                 <h3 class="article-title" >kimi- May 23,2022</h3>
+                 <h3 class="des">not the blue one</h3>
+                  <a class="article-title" href="/md/2021-03-01/">read more</a>
+            </article><article class="article">
+                 <h3 >mob psycho 100</h3>
+                 <div class="stars"></div>
+                 <h3 class="article-title" >kimi- May 23,2022</h3>
+                 <h3 class="des">this kid named mob goes psycho when he reaches 100%</h3>
+                  <a class="article-title" href="/md/idk/">read more</a>
+            </article><article class="article">
+                 <h3 >tokyo ghoul</h3>
+                 <div class="stars"></div>
+                 <h3 class="article-title" >kimi- May 23,2022</h3>
+                 <h3 class="des">this show actually sucks sorry; rlly boring</h3>
+                  <a class="article-title" href="/md/more/">read more</a>
+            </article><article class="article">
+                 <h3 >ouran host club</h3>
+                 <div class="stars"></div>
+                 <h3 class="article-title" >kimi- February 31,2022</h3>
+                 <h3 class="des">incest</h3>
+                  <a class="article-title" href="/md/ok/">read more</a>
+            </article></ul>
+ 
+  </section>
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
